@@ -1,13 +1,17 @@
 package com.github.shinjaxu.springframework;
 
 public class BeanDefinition {
-    private Object bean;
+    private Class clazz;
 
-    public BeanDefinition(Object bean) {
-        this.bean = bean;
+    public BeanDefinition(Class clazz) {
+        this.clazz = clazz;
     }
 
-    public Object getBean() {
-        return bean;
+    public Class getClazz() {
+        return clazz;
+    }
+
+    public void setClazz(Class clazz) {
+        this.clazz = clazz;
     }
 }
